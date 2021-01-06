@@ -257,6 +257,11 @@ body {
   }
 
   #container-four {
+    color: $secundary-color;
+    background: #ECE9E6;  // fallback for old browsers
+    background: -webkit-linear-gradient(to top, #ECE9E6, #FFF);  // Chrome 10-25, Safari 5.1-6
+    background: linear-gradient(to top, #ECE9E6, #FFF); // W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+
     .row {
       @extend %setup-1110px;
     }
@@ -327,13 +332,6 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-around;
-
-    /*
-    #map {
-      width: 325px;
-      height: 325px;
-    }
-    */
 
     .navbar-nav {
         display: inline-block;
@@ -419,7 +417,7 @@ body {
 
     .hr-responsive-menu {
       background-color: $secundary-color;
-      margin: 5px auto;
+      margin: 10px auto;
       width: 40px;
 
       &:first-child{
@@ -524,11 +522,6 @@ body {
           margin-left: 0px;
         }
       }
-      /*
-      #map {
-        margin: 20px 0;
-      }
-      */
     }
   }
 }
@@ -614,11 +607,4 @@ body {
       min-width: 200px!important;
     }
   }
-  
-  /*
-  #map {
-    width: 275px!important;
-    height: 275px!important;;
-  }
-  */
 }

@@ -31,16 +31,10 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Cookies API -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-
-  <!-- Maps API 
-  <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
-  <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
-  -->
 
   <link rel="stylesheet" type="text/css" href="./styles/styles.css">
 </head>
@@ -64,10 +58,14 @@
             <li class="nav-item">
               <a class="nav-link" href="#servicos">Serviços</a>
             </li>
+            
+            <!--
             <hr class="hr-responsive-menu">
             <li class="nav-item">
               <a class="nav-link" href="#sobre-nos">Sobre Nós</a>
             </li>
+            -->
+
             <hr class="hr-responsive-menu">
             <li class="nav-item">
               <a class="nav-link" href="#fale-conosco">Fale Conosco</a>
@@ -198,7 +196,7 @@
       </div>
 
     </div>
-
+    <!--
     <section class="container" id="container-three">
       <div class="row">
         <div class="col-12 mt-5 text-center">
@@ -233,9 +231,10 @@
         </div>
       </div>
     </section>
-
+    -->
+    
     <section class="container" id="container-four">
-      <div class="row my-5 justify-content-center">
+      <div class="row py-5 justify-content-center">
           <hr class="hr-h2 my-5">
           <h2 id="fale-conosco" class="display-3">Fale Conosco</h2>
           <hr class="hr-h2 my-5">
@@ -329,12 +328,6 @@
               </a>
             </li>
           </ul>
-          <!-- 
-          <hr class="hr-footer two">
-          <a href="https://www.google.com/maps/place/Metr%C3%B4+Brigadeiro/@-23.568864,-46.6496037,17z" target="_blank">
-            <div id="map"></div>
-          </a>
-          -->
         </div>
       </nav>
     </footer>
@@ -362,22 +355,6 @@
     }
   });
   </script>
-
-  <!-- Maps API 
-  <script>
-    mapboxgl.accessToken = 'pk.eyJ1Ijoicm9kemVyYSIsImEiOiJja2ljMXo5cTYwODltMnhyejAzb3gycjdzIn0.KnHBZifUoOSZTaigLZSnHA';
-    var map = new mapboxgl.Map({
-    container: 'map', // container id
-    style: 'mapbox://styles/mapbox/streets-v11', // style URL
-    center: [-46.6487763, -23.5677666], // starting position [lng, lat]
-    zoom: 14 // starting zoom
-    });
-
-    var marker = new mapboxgl.Marker()
-    .setLngLat([-46.6487763, -23.5677666])
-    .addTo(map);
-  </script>
-  -->
 
   <!-- Axios Client -->
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
