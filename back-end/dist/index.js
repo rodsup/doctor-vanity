@@ -26,9 +26,7 @@ const express_1 = __importStar(require("express"));
 const cors_1 = __importDefault(require("cors"));
 const nodemailer_1 = __importDefault(require("nodemailer"));
 const connection_1 = __importDefault(require("./database/connection"));
-const fs_1 = __importDefault(require("fs"));
 const http_1 = __importDefault(require("http"));
-const https_1 = __importDefault(require("https"));
 const app = express_1.default();
 app.use(cors_1.default({ origin: '*' }));
 app.use(express_1.json());
@@ -73,5 +71,12 @@ app.post('/sendEmail', async (request, response) => {
     });
     return response.json({ insertedMail, message: 'E-mail enviado com sucesso.' }).status(201);
 });
-
+/*
+// HTTPS
+const options = {
+  key: fs.readFileSync('key.key', 'utf-8'),
+  cert: fs.readFileSync('cert.cert', 'utf-8')
+};
+*/
 http_1.default.createServer(app).listen(3333);
+/*https.createServer(options, app).listen(4433);*/ 
