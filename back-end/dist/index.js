@@ -36,8 +36,8 @@ const sender = nodemailer_1.default.createTransport({
     port: 587,
     secure: false,
     auth: {
-        user: 'thedoctorvanity@gmail.com',
-        pass: '15up68kl4t' // password
+        user: '',
+        pass: '' // password
     }
 });
 app.post('/sendEmail', async (request, response) => {
@@ -56,7 +56,7 @@ app.post('/sendEmail', async (request, response) => {
     trx.commit();
     const emailToBeSend = {
         from: email,
-        to: 'thedoctorvanity@gmail.com',
+        to: '',
         subject: 'Mensagem - Site Doctor Vanity',
         text: messageFormated
     };

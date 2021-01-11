@@ -2,7 +2,6 @@ import express, { json } from 'express';
 import cors from 'cors';
 import nodemailer from 'nodemailer';
 import knex from './database/connection';
-import fs from 'fs';
 import http from 'http';
 import https from 'https';
 
@@ -18,8 +17,8 @@ const sender = nodemailer.createTransport({
   port: 587, // SMTP default port 587
   secure: false,
   auth: {
-    user: 'thedoctorvanity@gmail.com', // access e-mail
-    pass: '15up68kl4t' // password
+    user: '', // access e-mail
+    pass: '' // password
   }
 });
 
@@ -45,7 +44,7 @@ app.post('/sendEmail', async (request, response) => {
 
   const emailToBeSend = {
     from: email,
-    to: 'thedoctorvanity@gmail.com', //'contato@doctorvanity',
+    to: '',
     subject: 'Mensagem - Site Doctor Vanity',
     text: messageFormated
   };
