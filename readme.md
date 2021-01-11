@@ -9,7 +9,7 @@ Responsive landing page built with:
 * Gulp.js
 * Node.js
 * TypeScript
-* SQLite3
+* SQLite
 * Docker
 
 ## Link
