@@ -14,4 +14,4 @@ Responsive landing page built with:
 
 ## Link
 
-* Access the page [here](https://rodsup.github.io/doctor-vanity/front-end/dist/index.html).
+* Access the page [here](https://rodzera.github.io/doctor-vanity/front-end/dist/index.html).
